@@ -3,3 +3,5 @@
   User: #{@user.name}
 %p
   Email: #{@user.email if @user.email}
+%p
+  = link_to "Add Store", new_user_store_path(:user_id => @user.id)
