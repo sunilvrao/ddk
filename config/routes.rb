@@ -8,8 +8,11 @@ Ddk::Application.routes.draw do
   end
   root :to => "home#index"
   devise_for :users
+  
   resources :users do
-    resources :stores
+    resources :stores do
+      resources :locations
+    end
   end
   
 end

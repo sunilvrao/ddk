@@ -51,6 +51,8 @@ GEM
     binding_of_caller (0.6.8)
     bootstrap-sass (2.2.2.0)
       sass (~> 3.2)
+    bootswatch-rails (0.2.0)
+      railties (>= 3.1)
     bourbon (3.0.1)
       sass (>= 3.2.0)
       thor
@@ -236,6 +238,7 @@ DEPENDENCIES
   better_errors (>= 0.3.2)
   binding_of_caller (>= 0.6.8)
   bootstrap-sass (>= 2.2.2.0)
+  bootswatch-rails
   cancan (>= 1.6.8)
   capybara (>= 2.0.1)
   coffee-rails (~> 3.2.1)
