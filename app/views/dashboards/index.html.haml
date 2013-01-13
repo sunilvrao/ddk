@@ -1,0 +1,63 @@
+.row
+  .span6
+    %h1 Listing dashboards
+  .span5
+    %a.btn.btn-inverse{:href => "#"}
+      %i.icon-random.icon-white
+      My Campaigns
+    %a.btn.btn-inverse{:href => "#"}
+      %i.icon-random.icon-white
+      My Stores
+    %a.btn.btn-inverse{:href => "#"}
+      %i.icon-random.icon-white
+      My Reports      
+.row
+  .span6
+    .well
+      #bar-example
+      #donut-example
+      #line-example
+      #area-example
+      .btn-group
+        %a.btn.btn-primary{:href => "#"} Switch Charts
+        %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "#"} Prospects Mailed
+          %li
+            %a{:href => "#"} Dollar Spent
+          %li
+            %a{:href => "#"} Campaign Response
+          %li
+            %a{:href => "#"} Marketing Dollars
+  .span5
+    .well
+      %h3 Campaign Invitation
+      %p
+        Hello.  We have a March Campaign opened for participation.  Would you like to enroll in the campaign?
+      %a.btn.btn-success{:href => "#"}
+        %i.icon-ok.icon-white
+        Yes. Sign me Up
+      %a.btn.btn-danger{:href => "#"}
+        %i.icon-ok.icon-white
+        No. Thanks
+
+.row
+  .span7
+    %ul.nav.nav-tabs
+      %li.active
+        %a{"data-toggle" => "tab", :href => "#A"} Activities
+      %li
+        %a{"data-toggle" => "tab", :href => "#B"} Campaigns
+      %li
+        %a{"data-toggle" => "tab", :href => "#C"} Reports
+    .tabbable
+      .tab-content
+        #A.tab-pane.active
+          %p I'm in Section A.
+        #B.tab-pane
+          %p Howdy, I'm in Section B.
+        #C.tab-pane
+          %p What up girl, this is Section C.
+

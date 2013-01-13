@@ -1,0 +1,26 @@
+%p
+  %strong Kid:
+  = location.type
+  = location.address1
+  = location.address2
+  = location.city
+  = location.state
+  = location.zip
+  = location.email
+  = location.phone
+  
+  = link_to 'Remove', [store.location, location], :confirm => 'Really remove location?', :method => :delete
+
+%fieldset
+  = f.label :content, "Location"
+  %br/
+  = f.text_area :content
+  %br/
+  = f.check_box :_destroy
+  = f.label :_destroy, "Remove Address"
+
+
+ %label{:for => "post_title"} Title
+    .input
+      %input#post_title.span8{"data-bind" => "post.title", :name => "post[title]", :size => "30", :type => "text"}
+%fieldset

@@ -1,0 +1,16 @@
+%fieldset
+  = f.label :address1, "Address 1"
+  = f.text_field :address1
+  = f.label :address1, "Address 2"
+  = f.text_field :address2
+  = f.label :address1, "City"
+  = f.text_field :city
+  = f.label :address1, "State"
+  = f.text_field :state
+  = f.label :address1, "Zip"
+  = f.text_field :zip
+  = f.label :address1, "Type"
+  = f.text_field :type
+
+  = f.hidden_field :_destroy
+  = link_to "remove", '#', class: "remove_fields"

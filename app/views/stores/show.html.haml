@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @store.name
+%p
+  %b Description:
+  = @store.description
+%p
+  %b Logo:
+  = @store.logo
+%p
+  %b Cc auth:
+  = @store.cc_auth_id
+%p
+  %b User:
+  = @store.user.name
+
+= link_to 'Edit', edit_user_store_path(@store.user.id, @store.id)
+\|
+= link_to 'Back', user_stores_path

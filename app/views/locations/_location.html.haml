@@ -1,0 +1,13 @@
+%p
+  %strong Kid:
+  = location.type
+  = location.address1
+  = location.address2
+  = location.city
+  = location.state
+  = location.zip
+  = location.email
+  = location.phone
+  
+  = link_to 'Remove', [store.location, location], :confirm => 'Really remove location?', :method => :delete
+

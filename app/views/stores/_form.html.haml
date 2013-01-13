@@ -1,0 +1,16 @@
+= simple_form_for([@user, @store]) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :description
+    = f.input :logo
+    = f.input :cc_auth_id
+    = f.association :user
+
+  = f.fields_for :locations do |builder|
+    = render 'location_fields', f: builder
+  = link_to_add_fields "Add Location", f, :locations
+  
+  .form-actions
+    = f.button :submit

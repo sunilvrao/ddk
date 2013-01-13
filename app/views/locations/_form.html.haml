@@ -1,0 +1,15 @@
+= simple_form_for([@user, @store, @store.locations.build]) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :type, :selected => [ "Store" ], :collection => [ "Billing", "Store"]
+    = f.input :address1
+    = f.input :address2
+    = f.input :city
+    = f.input :state
+    = f.input :zip
+    = f.input :email
+    = f.input :phone
+
+  .form-actions
+    = f.button :submit

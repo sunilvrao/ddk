@@ -1,0 +1,7 @@
+%h1 Editing store
+
+= render 'form'
+
+= link_to 'View', user_store_path(@user.id,@user.stores)
+\|
+= link_to 'Back', user_stores_path
