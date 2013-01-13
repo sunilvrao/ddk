@@ -3,7 +3,8 @@ gem 'rails', '3.2.9'
 gem 'mysql2'
 gem 'wicked'
 gem 'activeadmin'
-
+gem 'cells'
+gem "google_visualr", ">= 2.1"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
